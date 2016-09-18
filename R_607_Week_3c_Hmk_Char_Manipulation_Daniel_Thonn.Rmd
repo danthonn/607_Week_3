@@ -114,6 +114,11 @@ str_detect(Four_c,".*?\\.txt$")
 Four_d <- c("11/11/1111","1/11/1111","11/1/1111","11/11/111")
 str_detect(Four_d,"\\d{2}/\\d{2}/\\d{4}")
 
+#4e). <(.+?)>.+?</\\1> : text inside HTML type tags 
+
+Four_e <- c("<test>Test</test>") 
+str_detect(Four_e,"<(.+?)>.+?</\\1>")
+
 
 ```
 
